@@ -1,0 +1,17 @@
+.landing-background{
+    background-image: url('../../images/danial-igdery-FCHlYvR5gJI-unsplash.jpg');
+    background-size: cover;
+}
+
+.landing-text{
+    text-align: left !important;
+}
+.parallax{
+    background: url('../../images/markus-spiske-MI9-PY5cyNs-unsplash.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+}
+.service-font{
+ font-family: 'Rubik'   
+}
