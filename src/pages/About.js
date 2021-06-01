@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 import '../components/styles/style.css'
 import Logo1 from '../images/logo1.png'
 import Logo2 from '../images/logo2.png'
 import Logo3 from '../images/logo3.png'
 import Logo4 from '../images/logo4.png'
-import Logo5 from '../images/lara.png'
+import Logo5 from '../images/logo5.png'
 import Logo6 from '../images/logo6.png'
 import Logo7 from '../images/logo7.png'
 
@@ -13,8 +14,17 @@ const About = () => {
     return (
         <>
             <div className="bg-gray-50">
+            
                 <div className="parallax flex justify-start items-start text-white text-6xl pt-16 pl-20 pb-16 service-font">
-                    About
+                   
+                    <div className="flex  float-right justify-start items-start w-2/4">
+                        About Me
+                    </div>
+                    <div className=" flex justify-end items-end w-2/4">
+                        <div className="w-14 float-right mr-20">
+                            <Navbar  className="absolute"/>
+                        </div>
+                    </div>
                 </div>
                 <div className="flex justify-center items-center px-10 mt-10 leading-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/>
@@ -23,41 +33,63 @@ const About = () => {
                  
                 </div>
             </div>
-            <div className="">
-                <div className="flex justify-start items-start text-5xl text-gray-600 pt-16 pl-10 h-20 service-font">
-                    Technologies
+            <div className=" py-10">
+                <div className="sectional-caption-text service-font">
+                    Stack
                 </div>
-                <div className="flex justify-center items-center mt-36">
-                    <Link to="/" className="flex flex-col justify-center items-center text-gray-600 ml-20">
-                            <img src={Logo1} alt="logo1" className="rounded-full h-24 animate-bounce shadow-2xl"/>
-                            MongoDB
-                    </Link>
-                    <Link to="/" className="flex flex-col justify-center items-center text-gray-600 ml-20">
-                            <img src={Logo2} alt="logo2" className="rounded-full h-24 animate-bounce shadow-2xl"/>
-                            Express
-                    </Link>
-                    <Link to="/" className="flex flex-col justify-center items-center text-gray-600 ml-20">
+                <div className="flex flex-col justify-center items-center mt-36 md:flex-row">
+                    <div className="flex flex-row">
+                        <Link to="https://www.mongodb.com/" className="flex flex-col justify-center items-center text-gray-600 ml-20">
+                                <img src={Logo1} alt="logo1" className="rounded-full h-24 animate-bounce shadow-2xl"/>
+                                MongoDB
+                        </Link>
+                        <Link to="https://expressjs.com/" className="flex flex-col justify-center items-center text-gray-600 ml-20">
+                                <img src={Logo2} alt="logo2" className="rounded-full h-24 animate-bounce shadow-2xl"/>
+                                Express
+                        </Link>
+                    </div>
+                    
+                    <div className="flex flex-row mt-20 md:mt-0">
+                    <Link to="https://reactjs.org/" className="flex flex-col justify-center items-center text-gray-600 ml-20">
                             <img src={Logo3} alt="logo3" className="rounded-full h-24 animate-bounce shadow-2xl"/>
                             React JS
                     </Link>
-                    <Link to="/" className="flex flex-col justify-center items-center text-gray-600 ml-20">
+                    <Link to="https://nodejs.org/" target="_blank" className="flex flex-col justify-center items-center text-gray-600 ml-20">
                             <img src={Logo4} alt="logo4" className="rounded-full h-24 animate-bounce shadow-2xl"/>
                             Node
                     </Link>
+                    </div>
+                    
                 </div>
                 <div className="flex justify-center items-center mt-24">
-                    <Link to="/" className="flex flex-col justify-center items-center text-gray-600 ml-16">
+                    <Link to="https://flutter.dev/" className="flex flex-col justify-center items-center text-gray-600 ml-16">
                             <img src={Logo5} alt="logo5" className="rounded-full h-24 animate-bounce shadow-2xl"/>
                             Flutter
                     </Link>
-                    <Link to="/" className="flex flex-col justify-center items-center text-gray-600 ml-16">
+                    <Link to="https://www.xclaimlabs.com/" className="flex flex-col justify-center items-center text-gray-600 ml-16">
                             <img src={Logo6} alt="logo7" className="rounded-full h-24 animate-bounce shadow-2xl"/>
                             JavaScript
                     </Link>
-                    <Link to="/" className="flex flex-col justify-center items-center text-gray-600 ml-16">
+                    <Link to="https://sailsjs.com/" className="flex flex-col justify-center items-center text-gray-600 ml-16">
                             <img src={Logo7} alt="logo7" className="rounded-full h-24 animate-bounce shadow-2xl"/>
                             Sails
                     </Link>
+                </div>
+            </div>
+            <div className="bg-gray-50">
+                <div className="sectional-caption-text service-font">
+                    Works
+                </div>
+                <div className="flex flex-col justify-center items-center mt-12 py-10 md:flex-row ">
+                    <div className="works-panes">
+                        Website 1
+                    </div>
+                    <div className="works-panes mt-20 md:mt-0">
+                        Website 2
+                    </div>
+                    <div className="works-panes  mt-20 md:mt-0">
+                        Website 3
+                    </div>
                 </div>
             </div>
         </>

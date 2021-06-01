@@ -15,3 +15,38 @@
 .service-font{
  font-family: 'Rubik'   
 }
+::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 5px;
+    
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-image: linear-gradient(120deg, #2f976a, #196046, #44d399);
+}
+
+
+.sidebar-items{
+    top: 0;
+     left: -100%;
+    transition-duration: 600ms;
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+}
+
+.sidebar-items.active{
+    left: 0;
+    transition-duration:850ms; 
+    display: flex;
+}
+
+.sidebar-menu li Link {
+    width: 100%;
+    
+}

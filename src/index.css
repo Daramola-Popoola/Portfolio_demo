@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.works-panes{
+    @apply flex justify-center items-center h-40 w-96 bg-white mr-14 text-3xl text-gray-500 shadow-sm;
+}
+
+.sectional-caption-text{
+    @apply flex justify-start items-start text-5xl text-gray-600 pt-16 pl-10 h-20;
+}

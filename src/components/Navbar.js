@@ -1,30 +1,51 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import { HiOutlineMenuAlt2 } from 'react-icons/hi'
-// import {HiArrowRight} from 'react-icons/hi'
+import { SidebarContent } from './Sidebar'
 import './styles/style.css';
 
 const Navbar = () => {
+    const [sidebar, setSidebar] = useState(false)
+    
+    const toggleSidebar = () => {
+        setSidebar(!sidebar);
+    }
+    
+    const detectPathName = () => {
+        let pageLocation = window.location.pathname;
+        return pageLocation
+    }
+    
     return (
         <>
-            <div className=" landing-background h-screen text-white">
-                <div className=" p-5 bg-black bg-opacity-70 h-screen">
-                    <div className="w-14">
-                        <Link to="/" className="text-5xl ">
-                            <HiOutlineMenuAlt2 />
-                        </Link>
-                    </div>
-                    
-                    <div className="flex justify-start items-start mt-56 ml-24">
-                       <div className=" justify-start items-start text-5xl text-white capitalize service-font">
-                            Hi!, <br/> i'm John Doe
+            
+            <div className="">
+                <div className="w-14" onClick={toggleSidebar}>
+                    <Link to={detectPathName} className="text-5xl ">
+                        <HiOutlineMenuAlt2 />
+                    </Link>
+                </div>
+                    <div className={sidebar ? 'sidebar-items active ': 'sidebar-items'}>
+                        <div className="flex bg-green-900 justify-start items-start ">
+                            <ul className=" flex flex-col sidebar-menu h-screen justify-center items-center" onClick={toggleSidebar}>
+                                <li className="sidebar-toggle  text-4xl font-bold ">
+                                    <Link className="text-white float-left mr-40 mb-20">
+                                        &times;
+                                    </Link> 
+                                </li>
+                                    {SidebarContent.map((item, index) => {
+                                       return (
+                                         <li key={index} className={item.cName}>
+                                           <Link to={item.path}>
+                                                <div className="mb-20 mr-20"> {item.title}</div>
+                                          </Link>
+                                        </li>
+                                     )
+                                 })}
+                             </ul>
                         </div>
-                        <Link className="absolute bg-gradient-to-br from-green-400 to-green-600 py-3 px-7 rounded animate-bounce text-xl mt-32" to="/">
-                             Discover{/*r<HiArrowRight /> */}
-                        </Link>
                     </div>
                 </div>
-            </div>
         </>
     )
 }
