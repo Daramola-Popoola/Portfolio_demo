@@ -14,7 +14,7 @@ const Content = () => {
                     
                     <div className="flex flex-col justify-start items-start mt-56 ml-24">
                        <div className=" justify-start items-start text-5xl text-white capitalize landing-text service-font">
-                            Hi!, <br/> i'm John Doe
+                            Hi!, <br/> i'm Popoola Daramola
                         </div>
                         <div className="animate-bounce mt-16 relative">
                             <Link className=" bg-gradient-to-br from-green-400 to-green-600 py-3 px-7 rounded text-xl " to="/about">

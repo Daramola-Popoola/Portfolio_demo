@@ -49,19 +49,19 @@ const Contact = () => {
                         <div className="font-bold">Address</div>
                         <br/>
                         <div className="ml-3">
-                            195, Herbert Macaulay Way, Yaba, Lagos
+                            #Wennovation Hub ,12 Rev'd Ogunbiyi Street G.R.A Ikeja, Lagos state, Nigeria.
                         </div>
                          
                     </div>
                     <div className="flex justify-start items-start mt-14">
                         <div className=" font-bold">Email</div>
-                        <div className="ml-3">example@mail.com</div>
+                        <div className="ml-3">daramolapopoola17@gmail.com</div>
                          
                     </div>
                     <div className="flex justify-start items-start mt-14">
                     <div className=" font-bold">Tel No</div>
                     <div className="ml-3">
-                        08080999444
+                        08167370030
                     </div>
                         
                     </div>
