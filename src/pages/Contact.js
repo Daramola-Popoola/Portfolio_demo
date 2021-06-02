@@ -40,8 +40,8 @@ const Contact = () => {
                 </div>
                 
             </div>
-            <div className="flex flex-col justify-center items-center bg-white shadow-lg mt-20 py-20 md:flex-row">
-                <div className="flex flex-col text-xl text-gray-600 w-2/4 mb-40  px-0 md:px-28">
+            <div className="flex flex-col shadow-lg mt-20 py-20 md:flex-row">
+                <div className="flex flex-col text-xl text-gray-600 w-2/4 mb-40 ml-20  px-0 md:px-28 md:ml-0">
                     <div className="flex service-font text-3xl justify-center items-start text-gray-600 md:justify-start">
                         Find Me
                     </div>
@@ -71,8 +71,8 @@ const Contact = () => {
                     </button>
                     </div>
                 </div>
-                <div className="flex flex-col justify-start w-2/4">
-                    <div className="service-font float-left text-3xl  text-gray-600">
+                <div className="flex flex-col justify-start w-2/4 ml-10 md:ml-0">
+                    <div className="service-font text-2xl md:text-3xl text-center  text-gray-600 float-none md:float-left">
                         Speak With Me
                     </div>
                     <div className="">
@@ -102,7 +102,7 @@ const Contact = () => {
                                 </textarea>
                             </div>
                             <div>
-                                <button type="button" className="py-4 ml-32 px-10 mt-20 bg-green-400 shadow-md hover:shadow-xl text-white text-xl service-font rounded outline-none outliner" onClick={checkData}>
+                                <button type="button" className="py-4  px-10 mt-20 bg-green-400 shadow-md hover:shadow-xl text-white text-xl service-font rounded outline-none outliner ml-20 md:ml-32" onClick={checkData}>
                                     Send
                                 </button>
                             </div>
