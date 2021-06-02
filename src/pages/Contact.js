@@ -28,46 +28,47 @@ const Contact = () => {
     
     
     return (
-        <div className="">
-            <div className="flex flex-row sectional-caption-text w-full service-font">
+        <div className=" bg-gray-50 py-10">
+            <div className="flex flex-row sectional-caption-text w-full service-font md:text-5xl">
                 <div className="flex  float-right justify-start items-start w-2/4">
-                    Contact Me
+                    Contact <span>&nbsp;Me</span>
                 </div>
                 <div className=" flex justify-end items-end w-2/4">
-                    <div className="w-14 float-right mr-20">
+                    <div className="w-14 float-right mr-0 md:mr-20">
                         <Navbar  className="absolute"/>
                     </div>
                 </div>
                 
             </div>
-            <div className="flex flex-col justify-center items-center mt-20 py-20 md:flex-row">
-                <div className="flex flex-col justify-start items-start text-xl text-gray-600 w-2/4 mb-40 md:px-28">
-                    <div className="service-font text-3xl text-gray-600">
+            <div className="flex flex-col justify-center items-center bg-white shadow-lg mt-20 py-20 md:flex-row">
+                <div className="flex flex-col text-xl text-gray-600 w-2/4 mb-40  px-0 md:px-28">
+                    <div className="flex service-font text-3xl justify-center items-start text-gray-600 md:justify-start">
                         Find Me
                     </div>
-                    <div className="flex justify-start items-start mt-14 w-2/4">
-                        <div className="font-bold">Address</div>
-                        <br/>
-                        <div className="ml-3">
+                    <div className="flex justify-start items-start mt-14">
+                        <div className="font-bold hidden md:inline">Address</div>
+                        <div className="ml-3 text-sm md:text-base">
                             #Wennovation Hub ,12 Rev'd Ogunbiyi Street G.R.A Ikeja, Lagos state, Nigeria.
                         </div>
                          
                     </div>
                     <div className="flex justify-start items-start mt-14">
-                        <div className=" font-bold">Email</div>
-                        <div className="ml-3">daramolapopoola17@gmail.com</div>
+                        <div className=" font-bold hidden md:inline">Email</div>
+                        <div className="ml-3 text-sm md:text-base">daramolapopoola17@gmail.com</div>
                          
                     </div>
-                    <div className="flex justify-start items-start mt-14">
-                    <div className=" font-bold">Tel No</div>
-                    <div className="ml-3">
+                    <div className="flex justify-center items-start mt-14 md:justify-start">
+                    <div className=" font-bold hidden md:inline">Tel No</div>
+                    <div className="ml-3 text-sm md:text-base">
                         08167370030
                     </div>
                         
                     </div>
                     
                     <div className="mt-20">
-                    <button type="button" className="py-3 px-7 float-left bg-green-400 text-white text-2xl service-font rounded shadow-md  hover:shadow-xl">Hire</button>
+                    <button type="button" className="py-3 px-7 float-left bg-green-400 text-white text-2xl service-font rounded shadow-md  hover:shadow-xl ml-12 md:ml-0">
+                        Hire
+                    </button>
                     </div>
                 </div>
                 <div className="flex flex-col justify-start w-2/4">
@@ -83,7 +84,7 @@ const Contact = () => {
                                 value={info.name.value}
                                 onChange={e=> setInfo({...info, name: {value: e.target.value}})}
                                 placeholder="Name *"
-                                className="h-12 w-64 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-green-800 transition duration-300" />
+                                className="h-12 w-64 border-t-0 border-l-0 border-r-0 border-b-2 outline-none focus:border-green-600 transition duration-300" />
                        </div>
                             <div className="mt-14">
                             <div className="text-red-500 text-sm">{validation.mailMsg}</div>
@@ -92,16 +93,16 @@ const Contact = () => {
                                 value={info.mail.value}
                                 onChange={e=> setInfo({...info, mail: {value: e.target.value}})}
                                 placeholder="Mail *"
-                                className="h-12 w-64 border-t-0 border-l-0 border-r-0 border-b-2 focus:border-green-800 transition duration-300" />
+                                className="h-12 w-64 border-t-0 border-l-0 border-r-0 border-b-2 outline-none focus:border-green-600 transition duration-300" />
                             </div>
                             
                             <div className="mt-14">
-                                <textarea className="border-2 shadow-inner rounded focus:border-green-800 transition duration-300" rows="6" cols="40" value={info.msg} onChange={e=> setInfo({...info, msg: e.target.value})} placeholder="Speak with me">
+                                <textarea className="border-2 shadow-inner outline-none rounded focus:border-green-600 transition duration-300" rows="6" cols="40" value={info.msg} onChange={e=> setInfo({...info, msg: e.target.value})} placeholder="Speak with me">
                              
                                 </textarea>
                             </div>
                             <div>
-                                <button type="button" className="py-4 ml-32 px-10 mt-20 bg-green-400 text-white text-xl service-font rounded-full " onClick={checkData}>
+                                <button type="button" className="py-4 ml-32 px-10 mt-20 bg-green-400 shadow-md hover:shadow-xl text-white text-xl service-font rounded outline-none outliner" onClick={checkData}>
                                     Send
                                 </button>
                             </div>

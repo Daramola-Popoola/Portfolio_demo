@@ -7,5 +7,5 @@
 }
 
 .sectional-caption-text{
-    @apply flex justify-start items-start text-5xl text-gray-600 pt-16 pl-10 h-20;
+    @apply flex justify-start items-start text-4xl text-gray-600 pt-16 pl-10 h-20;
 }

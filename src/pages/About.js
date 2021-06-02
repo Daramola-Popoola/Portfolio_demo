@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import '../components/styles/style.css'
 import Logo1 from '../images/logo1.png'
@@ -15,14 +14,14 @@ const About = () => {
         <>
             <div className="bg-gray-50">
             
-                <div className="parallax flex justify-start items-start text-white text-6xl pt-16 pl-20 pb-16 service-font">
+                <div className="parallax flex justify-start items-start text-white text-3xl pt-16 pl-20 pb-16 service-font md:text-6xl">
                    
-                    <div className="flex  float-right justify-start items-start w-2/4">
+                    <div className="flex  float-right justify-start items-start w-2/4 ">
                         About Me
                     </div>
                     <div className=" flex justify-end items-end w-2/4">
-                        <div className="w-14 float-right mr-20">
-                            <Navbar  className="absolute"/>
+                        <div className="w-14 float-right mr-0 md:mr-20">
+                            <Navbar />
                         </div>
                     </div>
                 </div>
@@ -33,47 +32,50 @@ const About = () => {
                  
                 </div>
             </div>
-            <div className=" py-10">
-                <div className="sectional-caption-text service-font">
+            <div className="flex flex-col py-10">
+                <div className="sectional-caption-text service-font md:text-5xl">
                     Stack
                 </div>
-                <div className="flex flex-col justify-center items-center mt-36 md:flex-row">
-                    <div className="flex flex-row">
-                        <Link to="https://www.mongodb.com/" className="flex flex-col justify-center items-center text-gray-600 ml-20">
-                                <img src={Logo1} alt="logo1" className="rounded-full h-24 animate-bounce shadow-2xl"/>
-                                MongoDB
-                        </Link>
-                        <Link to="https://expressjs.com/" className="flex flex-col justify-center items-center text-gray-600 ml-20">
-                                <img src={Logo2} alt="logo2" className="rounded-full h-24 animate-bounce shadow-2xl"/>
-                                Express
-                        </Link>
+                <div className="mr-20 md:mr-0">
+                    <div className="flex flex-col justify-center items-center mt-36 md:flex-row">
+                        <div className="flex flex-col md:flex-row">
+                            <a href="https://www.mongodb.com/" rel="noreferrer" target="_blank" className="flex flex-col justify-center items-center text-gray-600 ml-20">
+                                    <img src={Logo1} alt="logo1" className="rounded-full h-24 animate-bounce shadow-2xl"/>
+                                    MongoDB
+                            </a>
+                            <a href="https://expressjs.com/" rel="noreferrer" target="_blank" className="flex flex-col justify-center items-center text-gray-600 ml-20 mt-20 md:mt-0">
+                                    <img src={Logo2} alt="logo2" className="rounded-full h-24 animate-bounce shadow-2xl"/>
+                                    Express
+                            </a>
+                        </div>
+                        
+                        <div className="flex flex-col md:flex-row mt-20 md:mt-0">
+                        <a href="https://reactjs.org/" rel="noreferrer" target="_blank" className="flex flex-col justify-center items-center text-gray-600 ml-20 ">
+                                <img src={Logo3} alt="logo3" className="rounded-full h-24 animate-bounce shadow-2xl"/>
+                                React JS
+                        </a>
+                        <a href="https://nodejs.org/" rel="noreferrer" target="_blank" className="flex flex-col justify-center items-center text-gray-600 ml-20 mt-20 md:mt-0">
+                                <img src={Logo4} alt="logo4" className="rounded-full h-24 animate-bounce shadow-2xl"/>
+                                Node
+                        </a>
+                        </div>
+                        
                     </div>
-                    
-                    <div className="flex flex-row mt-20 md:mt-0">
-                    <Link to="https://reactjs.org/" className="flex flex-col justify-center items-center text-gray-600 ml-20">
-                            <img src={Logo3} alt="logo3" className="rounded-full h-24 animate-bounce shadow-2xl"/>
-                            React JS
-                    </Link>
-                    <Link to="https://nodejs.org/" target="_blank" className="flex flex-col justify-center items-center text-gray-600 ml-20">
-                            <img src={Logo4} alt="logo4" className="rounded-full h-24 animate-bounce shadow-2xl"/>
-                            Node
-                    </Link>
+                    <div className="flex flex-col md:flex-row justify-center items-center mt-24">
+                        
+                        <a href="https://flutter.dev/" rel="noreferrer" target="_blank" className="flex flex-col justify-center items-center text-gray-600 ml-16 ">
+                                <img src={Logo5} alt="logo5" className="rounded-full h-24 animate-bounce shadow-2xl"/>
+                                Flutter
+                        </a>
+                        <a href="https://www.xclaimlabs.com/" rel="noreferrer" target="_blank" className="flex flex-col justify-center items-center text-gray-600 ml-16 mt-20 md:mt-0">
+                                <img src={Logo6} alt="logo7" className="rounded-full h-24 animate-bounce shadow-2xl"/>
+                                JavaScript
+                        </a>
+                        <a href="https://sailsjs.com/" rel="noreferrer" target="_blank" className="flex flex-col justify-center items-center text-gray-600 ml-16 mt-20 md:mt-0">
+                                <img src={Logo7} alt="logo7" className="rounded-full h-24 animate-bounce shadow-2xl"/>
+                                Sails
+                        </a>
                     </div>
-                    
-                </div>
-                <div className="flex justify-center items-center mt-24">
-                    <Link to="https://flutter.dev/" className="flex flex-col justify-center items-center text-gray-600 ml-16">
-                            <img src={Logo5} alt="logo5" className="rounded-full h-24 animate-bounce shadow-2xl"/>
-                            Flutter
-                    </Link>
-                    <Link to="https://www.xclaimlabs.com/" className="flex flex-col justify-center items-center text-gray-600 ml-16">
-                            <img src={Logo6} alt="logo7" className="rounded-full h-24 animate-bounce shadow-2xl"/>
-                            JavaScript
-                    </Link>
-                    <Link to="https://sailsjs.com/" className="flex flex-col justify-center items-center text-gray-600 ml-16">
-                            <img src={Logo7} alt="logo7" className="rounded-full h-24 animate-bounce shadow-2xl"/>
-                            Sails
-                    </Link>
                 </div>
             </div>
             <div className="bg-gray-50">

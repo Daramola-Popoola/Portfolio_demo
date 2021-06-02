@@ -21,7 +21,7 @@ const Navbar = () => {
             
             <div className="">
                 <div className="w-14" onClick={toggleSidebar}>
-                    <Link to={detectPathName} className="text-5xl ">
+                    <Link to={detectPathName} className="text-4xl md:text-5xl ">
                         <HiOutlineMenuAlt2 />
                     </Link>
                 </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
                         <div className="flex bg-green-900 justify-start items-start ">
                             <ul className=" flex flex-col sidebar-menu h-screen justify-center items-center" onClick={toggleSidebar}>
                                 <li className="sidebar-toggle  text-4xl font-bold ">
-                                    <Link className="text-white float-left mr-40 mb-20">
+                                    <Link to={detectPathName} className="text-white float-left mr-40 mb-20">
                                         &times;
                                     </Link> 
                                 </li>

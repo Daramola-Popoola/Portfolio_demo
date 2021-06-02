@@ -1,6 +1,7 @@
 .landing-background{
     background-image: url('../../images/danial-igdery-FCHlYvR5gJI-unsplash.jpg');
     background-size: cover;
+    z-index: 0;
 }
 
 .landing-text{
@@ -38,6 +39,7 @@
     display: flex;
     flex-direction: column;
     position:fixed;
+    z-index: 1;
 }
 
 .sidebar-items.active{
@@ -49,4 +51,8 @@
 .sidebar-menu li Link {
     width: 100%;
     
+}
+
+.outliner:focus{
+    outline: none !important;
 }
