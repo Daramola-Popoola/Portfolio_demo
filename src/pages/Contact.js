@@ -40,7 +40,7 @@ const Contact = () => {
                 </div>
                 
             </div>
-            <div className="flex flex-col shadow-lg mt-20 py-20 md:flex-row">
+            <div className="flex flex-col shadow-lg bg-white mt-20 py-20 md:flex-row">
                 <div className="flex flex-col text-xl text-gray-600 w-2/4 mb-40 ml-20  px-0 md:px-28 md:ml-0">
                     <div className="flex service-font text-3xl justify-center items-start text-gray-600 md:justify-start">
                         Find Me
