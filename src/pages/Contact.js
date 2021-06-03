@@ -97,7 +97,7 @@ const Contact = () => {
                             </div>
                             
                             <div className="mt-14">
-                                <textarea className="border-2 shadow-inner outline-none rounded focus:border-green-600 transition duration-300" rows="6" cols="40" value={info.msg} onChange={e=> setInfo({...info, msg: e.target.value})} placeholder="Speak with me">
+                                <textarea className="border-2 shadow-inner outline-none rounded focus:border-green-600 transition duration-300" rows="6" cols="37" value={info.msg} onChange={e=> setInfo({...info, msg: e.target.value})} placeholder="Speak with me">
                              
                                 </textarea>
                             </div>
