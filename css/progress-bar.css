@@ -1,0 +1,86 @@
+.progress-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.progress-container p{
+    font-size: 10px;
+    color: #1f2937;
+    margin-top: 10px;
+}
+
+.circular{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    text-align: center;
+}
+.circular .inner{
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    margin: -20px 0 0 -20px;
+    border-radius: 100%;
+    z-index: 5;
+}
+
+.circular .number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 300 15px 'verdana';
+    color: gray;
+    z-index: 10;
+}
+
+.circular .bar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f6f6f6;
+    border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+}
+
+.circular .bar .progress{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    clip: rect(0, 50px, 100px, 0);
+    background: rgb(20, 179, 20);
+}
+
+.circular .left .progress{
+    z-index: 1;
+    animation: left 4s linear both;
+}
+
+@keyframes left{
+    100%{
+        transform: rotate(180deg)
+    }
+}
+
+.circle .right{
+    transform: rotate(180deg)
+}
+
+.circular .right .progress{
+    z-index: 1;
+    animation: right 2.5s linear both;
+    animation-delay: 4s;
+}
+
+@keyframes right{
+    100%{
+        transform: rotate(120deg)
+    }
+}
