@@ -61,7 +61,6 @@
     .first-statement{
         flex-direction: column;
         margin-top: 60vh;
-        padding: 0 10px;
     }
     .section-inner{
         width: 100%;
@@ -81,6 +80,9 @@
 }
 
 @media screen and (max-width: 768px){
+    body{
+        padding: 0 7rem;
+    }
     .nav-cta-container{
         display: none;
     }
@@ -89,9 +91,7 @@
         align-items: center;
         justify-content: center;
     }
-    .landing-banner{
-        padding: 0 3rem;
-    }
+    
     .landing-lower-caption{
         width: auto !important;
         margin-top: 10px;

@@ -86,15 +86,11 @@
 }
 
 .dropbtn {
-  background-color: #1c2557;
-  color: white;
+  background-color: transparent;
+  color: #1c2557;
   padding: 16px;
-  font-size: 16px;
   border: none;
   cursor: pointer;
-  border-color: #1c2557;
-  border-width: 1px;
-  border-radius: 7px;
 }
 
 /* Dropdown button on hover & focus */

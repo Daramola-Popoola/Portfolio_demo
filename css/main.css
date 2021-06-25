@@ -4,6 +4,10 @@
    font-family: 'verdana';
 }
 
+body{
+    padding:  0 7rem;
+}
+
 .display-flex-column{
     display: flex;
     flex-direction: column;
@@ -98,7 +102,6 @@
 .landing-banner{
     display: flex;
     flex-direction: row;
-    padding: 0px 7rem;
     
 }
 
@@ -327,7 +330,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding: 0 7rem;
     margin-top: 100px;
 }
 
@@ -411,7 +413,6 @@
     justify-content: center;
     margin-top: 20px;
     text-align: center;
-    padding: 0 20px;
 }
 
 .how-it-works p:nth-child(1){
@@ -440,7 +441,6 @@
 .caption-section{
     display: flex;
     flex-direction: column;
-    padding: 0 7rem;
     margin-top: 30px;
     justify-content: center;
     align-items: center;
