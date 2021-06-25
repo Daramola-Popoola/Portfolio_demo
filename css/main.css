@@ -334,6 +334,8 @@
 .section-inner{
     width: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .section-1{
     flex-direction: row;
@@ -404,10 +406,12 @@
     margin: -10px 0 0px 0;
 }
 .how-it-works{
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     text-align: center;
+    padding: 0 20px;
 }
 
 .how-it-works p:nth-child(1){
@@ -525,6 +529,10 @@
     border-radius: 30px;
     border: 1px solid transparent;
     margin-top: 20px;
+}
+
+.macbook{
+    height: 30rem;
 }
 
 .btn.next-btn{

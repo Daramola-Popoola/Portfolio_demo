@@ -8,15 +8,30 @@
     <link type="text/css" rel="stylesheet" href="css/main-media.css" />
     <link type="text/css" rel="stylesheet" href="css/progress-bar.css" />
     <title>Marketing</title>
+    <style>
+        .hidden{
+            display: none;
+            visibility: hidden;
+        }
+    </style>
 </head>
 <body>
     
     <nav class="navbar display-flex-row">
-        <div class="nav-logo-container balancing">
+        <div class="nav-logo-container balancing" >
             <a href="#" class="navigation-brand display-flex-row">
                 <img src="./img/btc.png" />&nbsp;&nbsp;Payments
             </a>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
         </div>
+        
         <div class="nav-item-wrapper balancing">
             <ul class="nav-item-block display-flex-row">
                 <li><a href="#" class="nav-item-link active">Home</a></li>
@@ -30,7 +45,7 @@
             <a type="button" href="#" class="nav-cta">LOGIN</a>
         </div>
     </nav>
-    <section class="landing-banner display-flex-row">
+    <section class="landing-banner display-flex-row" >
         <aside class="landing-section">
             <div class="banner-caption-align">
                 <p class="landing-caption-txt">
@@ -42,8 +57,8 @@
                 </p>
                 <a type="button" href="#" class="banner-cta">TYPE YOUR EMAIL</a>
             </div>
-            <div class="landing-lower-section display-flex-row">
-                <div class="landing-lower-caption display-flex-row">
+            <div class="landing-lower-section">
+                <div class="landing-lower-caption ">
                     <div class="banner-side-icon color1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-focus-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -61,7 +76,7 @@
                     </div>
                 </div>
                 <div class="landing-lower-caption">
-                    <div class="banner-side-icon display-flex-column color2">
+                    <div class="banner-side-icon color2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-focus-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <circle cx="12" cy="12" r=".5" fill="currentColor" />
@@ -185,7 +200,7 @@
         </p>
         <div class="works-content display-flex-row">
             <div class="works-content-1">
-                <img src="./img/chatface.png"/>
+                <img src="./img/double-phone.png"/>
             </div>
             <div class="works-content-2">
             </div>
@@ -194,7 +209,7 @@
     </section>
     <seciton class="caption-section">
         <div class="caption-section-outer">
-            <div class="caption-section-inner" style="padding-right: 50px;">
+            <div class="caption-section-inner">
                 <p>built the app that everyone love</p>
                 <p>Lorem ipsum is simply a dummy text of the printing and typesetting industry,
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took gooley of type and sevtenced it to
@@ -208,7 +223,7 @@
         </div>
         <div class="caption-section-outer">
             <div class="caption-section-inner">
-                <img src="./img/Macbook Pro.png" height="400"/>
+                <img src="./img/Macbook Pro.png" class="macbook"/>
             </div>
             <div class="caption-section-inner">
                 <p>Why Us</p>
@@ -221,16 +236,25 @@
         </div>
         
     </seciton>
-    <section class="testimonial">
+    <section class="testimonial" >
         <p>Testimonial</p>
         <h1>Our Happy Users</h1>
         <div class="testimonial-content-wrapper">
             <div class="testimonial-container">
-                <p>
-                    Lorem ipsum is simply a dummy text of the printing and typesetting industry,
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                </p>
-                <p>Jothoms</p>
+                <div class="testimonial-txt active">
+                    <p>
+                        Lorem ipsum is simply a dummy text of the printing and typesetting industry,
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <p>Jothoms</p>
+                 </div>
+                 <div class="testimonial-txt hidden">
+                    <p>
+                        Lorem ipsum is simply a dummy text of the printing and typesetting industry,
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <p>Jothoms</p>
+                 </div>
                 <ul>
                     <li class="social-links"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="12" height="12" viewBox="0 0 24 24" stroke-width="0.5" stroke="#0000ff" fill="#0000ff" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -283,7 +307,8 @@
             <div class="testimonial-container"></div>
         </div>
     </section>
-    
+  <script src="js/dropdown.js"></script> 
+  
     <script tpye="text/javascript">
         
         const number = document.querySelector('.number');

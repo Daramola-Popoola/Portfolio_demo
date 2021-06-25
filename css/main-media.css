@@ -11,16 +11,32 @@
         margin: 25px 0 0 30%;
     }
     .first-statement{
-        margin-top: 50vh;
+        margin-top: 40vh;
     }
     
     .caption-section-outer{
         flex-direction: column;
+        text-align: center;
+    }
+    .caption-section-inner{
+        width: auto;
     }
     
     .caption-section-outer:not(:first-of-type){
         flex-direction: column-reverse;
+        
     }
+    
+    .testimonial-content-wrapper{
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+}
+.testimonial-container ul{
+    justify-content: center;
+    align-items: center;
+}
 }
 
 @media screen and (max-width: 870px){
@@ -28,6 +44,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .landing-section{
+        width: 100%;
     }
     .landing-banner .landing-section{
         width: 100%;
@@ -41,7 +60,8 @@
     }
     .first-statement{
         flex-direction: column;
-        margin-top: 70vh;
+        margin-top: 60vh;
+        padding: 0 10px;
     }
     .section-inner{
         width: 100%;
@@ -54,5 +74,77 @@
     }
     .section-2-txt{
         width: 100%;
+    }
+    .section-inner{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav-cta-container{
+        display: none;
+    }
+    .balancing{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .landing-banner{
+        padding: 0 3rem;
+    }
+    .landing-lower-caption{
+        width: auto !important;
+        margin-top: 10px;
+    }
+    .second-banner img{
+        display: none !important;
+    }
+    .nav-item-wrapper{
+        display: none !important;
+        visibility: hidden;
+    }
+    .first-statement{
+        margin-top: 10vh;
+    }
+    .banner-notif{
+          position: relative;
+    }
+    .notif-1{
+        padding: 0 1rem;
+    }
+    .notif-2{
+        margin:10px 0 0 20px;
+    }
+    
+    .macbook{
+        height: 15rem;
+    }
+    
+    .banner-notif-wrapper{
+       justify-content: center;
+       align-items: center;
+    }
+
+    .dropdown {
+    display: inline-block !important;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .section-circle-outer{
+        display: none;
+    }
+    .section-1 .banking-img{
+        position: relative !important;
+    }
+    
+    .landing-lower-section{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .landing-caption-txt{
+        font-size: 1.7rem;
     }
 }
